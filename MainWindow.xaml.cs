@@ -15,21 +15,6 @@ using System.Windows.Threading;
 
 namespace AppRTCDemo
 {
-    /*
- █████╗ ██╗   ██╗███████╗██████╗ ███████╗███████╗██████╗ 
-██╔══██╗██║   ██║██╔════╝██╔══██╗██╔════╝██╔════╝██╔══██╗
-███████║██║   ██║███████╗██████╔╝█████╗  █████╗  ██║  ██║
-██╔══██║╚██╗ ██╔╝╚════██║██╔═══╝ ██╔══╝  ██╔══╝  ██║  ██║
-██║  ██║ ╚████╔╝ ███████║██║     ███████╗███████╗██████╔╝
-╚═╝  ╚═╝  ╚═══╝  ╚══════╝╚═╝     ╚══════╝╚══════╝╚═════╝ 
-        
-        iConfRTC WPF Demo
-        A demo similar to the AppRTC demo, but that uses the iConfRTC SDK.
-
-        Feedback, comments
-        Email us at : support@avspeed.com
-        or vist https://avspeed.com
- */
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
@@ -258,32 +243,13 @@ namespace AppRTCDemo
 
         private void WebRTCInitialized(object sender)
         {
-            //you can add a turn server here
-            //rtcControl.AddIceServer(url: "numb.viagenie.ca", userName: "support@avspeed.com", password: "avspeedwebrtc", clearFirst: false, type: "turn");
-
             model.WebRTCInitialized = true;
             HideMessage();
-            //
-            //you can select your video device here for example by passing the identifying label or the Id for the device
-            //note that we have seen cases where device ids change, so the device id is not 100% reliable
-            //check the NewDevices event to capture the label and Id of the device
-            //
-            //sample code
-            //iconfRTC.SelectDevice("HD Pro Webcam C920 (046d:082d)", DeviceType.Video);
-            
-            //rtcControl.AddIceServer("stun.voiparound.com");
         }
 
         void gridBigVideo_MouseEnter(object sender, MouseEventArgs e)
         {
         }
-
-        //void h_InConference(iConfRTC.Shared.ConferenceEventArgs e)
-        //{
-        //    ShowMessage((e.userName == model.UserName ? "You " : e.userName) + " joined " + e.conferenceId);
-        //    // MessageBox.Show("You (" + e.userName + ") have joined  conference  + e.conferenceId);
-        //    h.EnableOverlay("In conference : " + e.conferenceId, "position:absolute;bottom:0px;color:#FFF;text-align:center;font-size:20px;background-color:rgba(221,221,221,0.3);width:640px;padding:10px0;z-index:2147483647;font-family: Verdana, Geneva, sans-serif;", true);
-        //}
 
         private void ProcessParticipants(List<MeetingParticipants> participants, string sessionJoined, bool isSharing)
         {
@@ -321,11 +287,6 @@ namespace AppRTCDemo
                         //only call webrtc functions when WebRTC is ready!!
                         viewer.RTCInitialized += (((object a) =>
                         {
-                            //you can add a turn server here
-                            //viewer.AddIceServer(url: "numb.viagenie.ca", userName: "support@avspeed.com", password: "avspeedwebrtc", clearFirst: false, type: "turn");
-                            //viewer.AddIceServer("stun.voiparound.com");
-
-                            //webrtc is ready, connect to signaling
                             viewer.ViewSession(participant.UserName, participant.Session);
                         }));
                     }
