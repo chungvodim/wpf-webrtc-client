@@ -9,7 +9,7 @@ using System.Threading;
 
 /// cool Adorner helper class provided by https://marlongrech.wordpress.com/2008/02/28/wpf-overlays-or-better-adorner/
 
-namespace AppRTCDemo
+namespace WebRtcClient
 {
     /// <summary>
     /// Adorner that disables all controls that fall under it

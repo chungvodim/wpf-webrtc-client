@@ -1,4 +1,4 @@
-﻿namespace AppRTCDemo
+﻿namespace WebRtcClient
 {
     public static class Const
     {

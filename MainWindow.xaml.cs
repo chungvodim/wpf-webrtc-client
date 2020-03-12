@@ -1,5 +1,5 @@
-﻿using AppRTCDemo.Commands;
-using AppRTCDemo.Model;
+﻿using WebRtcClient.Commands;
+using WebRtcClient.Model;
 using AVSPEED;
 using iConfRTCModel;
 using iConfRTCWPF;
@@ -13,7 +13,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Threading;
 
-namespace AppRTCDemo
+namespace WebRtcClient
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml

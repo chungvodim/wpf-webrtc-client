@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Controls;
 
-namespace AppRTCDemo
+namespace WebRtcClient
 {
     public class TextBoxNotEmptyValidationRule : ValidationRule
     {

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AppRTCDemo
+namespace WebRtcClient
 {
     public static class Const
     {

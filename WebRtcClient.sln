@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29613.14
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.16
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppRTCDemo", "AppRTCDemo.csproj", "{1BF88308-321D-4311-979C-73FB95B1DB68}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebRtcClient", "WebRtcClient.csproj", "{1BF88308-321D-4311-979C-73FB95B1DB68}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,8 +24,5 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {C48A4453-2A85-4C41-90A3-341D1592188E}
 	EndGlobalSection
 EndGlobal

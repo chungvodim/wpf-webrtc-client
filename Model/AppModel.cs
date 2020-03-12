@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AppRTCDemo.Model
+namespace WebRtcClient.Model
 {
     public class AppModel:INotifyPropertyChanged
     {

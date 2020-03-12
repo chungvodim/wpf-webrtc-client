@@ -1,6 +1,6 @@
 ﻿using System.Windows.Documents;
 
-namespace AppRTCDemo
+namespace WebRtcClient
 {
     public class CurrentParticipants
     {

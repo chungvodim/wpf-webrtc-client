@@ -12,7 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace AppRTCDemo
+namespace WebRtcClient
 {
     /// <summary>
     /// Interaction logic for PeerWindow.xaml
